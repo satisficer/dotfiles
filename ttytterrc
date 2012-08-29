@@ -1,0 +1,7 @@
+ansi=1
+verify=1
+vcheck=1
+#urlopen=elinks -dump %U | more
+urlopen=firefox %U
+dostream=1
+ssl=1

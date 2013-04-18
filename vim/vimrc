@@ -124,4 +124,4 @@ colorscheme solarized
 au BufReadCmd   *.epub      call zip#Browse(expand("<amatch>"))
 
 "use PAR for formatting
-"set formatprg=par
+set formatprg=par\ -w76eq

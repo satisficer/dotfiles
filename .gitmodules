@@ -12,3 +12,6 @@
 [submodule "rbenv"]
 	path = rbenv
 	url = git://github.com/sstephenson/rbenv.git
+[submodule "vim/bundle/vimwiki"]
+	path = vim/bundle/vimwiki
+	url = https://github.com/vim-scripts/vimwiki.git

@@ -15,3 +15,6 @@
 [submodule "vim/bundle/vimwiki"]
 	path = vim/bundle/vimwiki
 	url = git://github.com/vim-scripts/vimwiki.git
+[submodule "mutt/mutt-colors-solarized"]
+	path = mutt/mutt-colors-solarized
+	url = git://github.com/altercation/mutt-colors-solarized.git

@@ -125,3 +125,11 @@ au BufReadCmd   *.epub      call zip#Browse(expand("<amatch>"))
 
 "use PAR for formatting
 set formatprg=par\ -w76eq
+
+" Vimwiki options
+let wiki_1 = {}
+let wiki_1.path = '~/Documents/wiki/'
+let wiki_1.path_html = '~/Public/public_html/'
+
+let g:vimwiki_list = [wiki_1]
+

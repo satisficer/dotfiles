@@ -9,9 +9,6 @@
 "  for MS-DOS and Win32:  $VIM\_vimrc
 "	    for OpenVMS:  sys$login:.vimrc
 
-" Source files
-" source ~/.config/simplenote.rc
-
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
@@ -41,6 +38,7 @@ set incsearch		" do incremental searching
 map Q gq
 
 " Pathogen Stuff
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 

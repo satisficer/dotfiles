@@ -8,7 +8,7 @@
 description = default settings
 defargs = home
 #cachedir = ~/.weather
-cachedir = ~/.cache/weather
+cachedir = ~/.cache/weather/datacache
 #setpath = .:~/.weather:/var/lib/weather-util:/usr/share/weather-util
 forecast = True
 City = Austin

@@ -28,3 +28,6 @@
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
+[submodule "/home/comtex/git/dotfiles/pandoc/pandoc-templates"]
+	path = /home/comtex/git/dotfiles/pandoc/pandoc-templates
+	url = git://github.com/jgm/pandoc-templates.git

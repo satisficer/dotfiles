@@ -22,12 +22,12 @@
 [submodule "vim/bundle/vim-sensible"]
 	path = vim/bundle/vim-sensible
 	url = git://github.com/tpope/vim-sensible.git
-[submodule "/home/comtex/git/dotfiles/vim/bundle/vimwiki"]
+[submodule "vim/bundle/vimwiki"]
 	path = vim/bundle/vimwiki
 	url = git://github.com/vim-scripts/vimwiki.git
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
-[submodule "/home/comtex/git/dotfiles/pandoc/pandoc-templates"]
+[submodule "pandoc/pandoc-templates"]
 	path = pandoc/pandoc-templates
 	url = git://github.com/jgm/pandoc-templates.git

@@ -28,4 +28,7 @@
 [submodule "pandoc/pandoc-templates"]
 	path = pandoc/pandoc-templates
 	url = https://github.com/jgm/pandoc-templates.git
+[submodule "vim/bundle/vim-sensible"]
+	path = vim/bundle/vim-sensible
+	url = git://github.com/tpope/vim-sensible.git
 

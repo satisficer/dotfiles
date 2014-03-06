@@ -9,9 +9,6 @@
 	path = vim/bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
 	ignore = dirty 
-[submodule "rbenv"]
-	path = rbenv
-	url = git://github.com/sstephenson/rbenv.git
 [submodule "mutt/mutt-colors-solarized"]
 	path = mutt/mutt-colors-solarized
 	url = git://github.com/altercation/mutt-colors-solarized.git

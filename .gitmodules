@@ -24,13 +24,6 @@
 [submodule "vim/bundle/vim-sensible"]
 	path = vim/bundle/vim-sensible
 	url = git://github.com/tpope/vim-sensible.git
-
-[submodule "vim/bundle/--name"]
-	path = vim/bundle/--name
-	url = https://github.com/vim-pandoc/vim-pandoc.git
-[submodule "vim/bundle/--force"]
-	path = vim/bundle/--force
-	url = https://github.com/vim-pandoc/vim-pandoc.git
 [submodule "vim/bundle/vim-pandoc-syntax"]
 	path = vim/bundle/vim-pandoc-syntax
 	url = https://github.com/vim-pandoc/vim-pandoc-syntax.git

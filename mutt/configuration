@@ -1,0 +1,65 @@
+# General Configuration
+# Options the same for all mutt
+
+# Mailcap
+set mailcap_path=~/.mutt/mailcap
+
+# Signature
+# set signature="~/.signature"
+
+#set hidden_host
+set hostname="dev.invalid"
+
+# Headers and bodies
+set header_cache="~/.mutt/cache/headers/"
+set message_cachedir="~/.mutt/cache/bodies/"
+set certificate_file=~/.mutt/certificates
+
+set reverse_name=yes
+
+## ADDRESS BOOK
+set query_command="goobook query '%s'"
+# tab completes query
+bind editor <Tab> complete-query
+# ctrl-T local aliases
+bind editor ^T complete
+
+## DISPLAY
+# Use format=flowed
+set text_flowed
+set sort=threads
+unset mark_old
+# Headers
+ignore headers *
+unignore headers from to subject date user-agent
+# Get rid of + marker for wrapped lines
+unset markers
+
+# Use quoted-printable for From at start of line
+set encode_from
+
+# Decode attachments with rfc parameters
+set rfc2047_parameters=yes
+
+## EDITING
+# no CC
+unset metoo
+set edit_headers
+set autoedit
+# set date_format="%A, %d.%m.%y at %H:%M"
+# set attribution="On %M %N, %f wrote:"
+set editor="vim"
+set move=no
+
+set mail_check=300
+
+## ATTACHMENTS
+# this helps with multipart messages
+alternative_order text/plain text/html
+# auto_view
+auto_view text/html
+# Return immediately from external programs
+unset wait_key
+# forward include attachments
+set mime_forward=yes
+set mime_forward_rest=yes

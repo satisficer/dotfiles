@@ -1,0 +1,5 @@
+#text/html;      uzbl %s; nametemplate=%s.html; copiousoutput
+#text/html;      firefox %s; nametemplate=%s.html; copiousoutput
+#text/html;      dillo %s; nametemplate=%s.html; copiousoutput
+#text/html;	dillo %s; nametemplate=%s.html; copiousoutput
+text/html;      elinks -dump %s; copiousoutput

@@ -4,6 +4,9 @@
 # Mailcap
 set mailcap_path=~/.mutt/mailcap
 
+# Encoding
+set send_charset="utf-8"
+
 # Signature
 # set signature="~/.signature"
 
@@ -18,20 +21,21 @@ set certificate_file=~/.mutt/certificates
 set reverse_name=yes
 
 ## ADDRESS BOOK
-set query_command="goobook query '%s'"
+#set query_command="goobook query '%s'"
 # tab completes query
-bind editor <Tab> complete-query
+#bind editor <Tab> complete-query
 # ctrl-T local aliases
-bind editor ^T complete
+#bind editor ^T complete
 
 ## DISPLAY
 # Use format=flowed
 set text_flowed
 set sort=threads
 unset mark_old
+
 # Headers
 ignore headers *
-unignore headers from to subject date user-agent
+unignore headers from to cc subject date user-agent
 # Get rid of + marker for wrapped lines
 unset markers
 
@@ -55,7 +59,8 @@ set mail_check=300
 
 ## ATTACHMENTS
 # this helps with multipart messages
-alternative_order text/plain text/html
+alternative_order text/plain text/enriched text/html
+
 # auto_view
 auto_view text/html
 # Return immediately from external programs
@@ -63,3 +68,7 @@ unset wait_key
 # forward include attachments
 set mime_forward=yes
 set mime_forward_rest=yes
+
+# set enter to view attachment with mailcap
+bind attach <return>    view-mailcap
+

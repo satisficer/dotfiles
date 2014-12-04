@@ -1,5 +1,10 @@
-#text/html;      uzbl %s; nametemplate=%s.html; copiousoutput
-#text/html;      firefox %s; nametemplate=%s.html; copiousoutput
-#text/html;      dillo %s; nametemplate=%s.html; copiousoutput
-#text/html;	dillo %s; nametemplate=%s.html; copiousoutput
-text/html;      elinks -dump %s; copiousoutput
+#text/html;	firefox %s; nametemplate=%s.html; copiousoutput
+#text/html;	dwb %s &; test=test -n "$DISPLAY"; needsterminal;
+
+# this gets blank dns field
+text/html;	dwb %s; nametemplate=%s.html; test=test -n "$DISPLAY"; needsterminal;
+
+# this works but autoviews due to copious output order
+#text/html;	dwb %s; nametemplate=%s.html; test=test -n "$DISPLAY"; needsterminal; copiousoutput;
+#text/html; pandoc -f html -t markdown; copiousoutput; compose=vim %s
+text/html;	elinks -dump %s; copiousoutput

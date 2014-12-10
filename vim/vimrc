@@ -124,6 +124,9 @@ colorscheme solarized
 "awesome. Add the following to your .vimrc:
 au BufReadCmd   *.epub      call zip#Browse(expand("<amatch>"))
 
+"treat Firefox xpi files as zip (e.g. to change version number)
+au BufReadCmd   *.xpi      call zip#Browse(expand("<amatch>"))
+
 "use PAR for formatting
 set formatprg=par\ -w76eq
 

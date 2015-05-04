@@ -122,7 +122,7 @@ colorscheme solarized
 "I just discovered that vim can open and edit files inside a zip file
 "automatically, which of course means it can do the same for epub. Which is
 "awesome. Add the following to your .vimrc:
-au BufReadCmd   *.epub      call zip#Browse(expand("<amatch>"))
+au BufReadCmd   *.epub		call zip#Browse(expand("<amatch>"))
 
 "treat Firefox xpi files as zip (e.g. to change version number)
 au BufReadCmd   *.xpi      call zip#Browse(expand("<amatch>"))
@@ -135,5 +135,6 @@ let wiki_1 = {}
 let wiki_1.path = '~/Documents/wiki/'
 let wiki_1.path_html = '~/Public/public_html/'
 "let wiki_1.syntax = 'markdown'
+let wiki_1.syntax = 'markdown'
 let g:vimwiki_list = [wiki_1]
 
